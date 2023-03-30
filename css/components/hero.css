@@ -1,0 +1,17 @@
+.hero *{
+    color:white;
+}
+
+.hero{
+    padding-bottom:5.2em;
+
+}
+
+
+.hero .btn{
+    margin-top:1rem;
+}
+
+.hero .section-wrapper {
+    grid-template-columns: 35% 55%;
+}

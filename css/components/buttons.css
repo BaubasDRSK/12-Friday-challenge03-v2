@@ -1,0 +1,28 @@
+.btn{
+    font-size:2rem;
+    padding:0.7rem 3rem;
+    border-radius: 0.3rem;
+    border:none;
+    cursor: pointer;
+}
+
+.white-btn{
+    background-color:white;
+    color:black;
+}
+
+.black-btn{
+    background-color: black;
+    color:white;
+}
+
+
+.btn:hover.white-btn{
+    background-color:black;
+    color:white;
+}
+
+.btn:hover.black-btn{
+    background-color:#74C69D;
+    color:white;
+}

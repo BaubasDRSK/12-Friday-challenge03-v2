@@ -1,0 +1,49 @@
+.main-header .section-wrapper{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.main-header .main-nav{
+    display:inline-grid;
+    grid-auto-flow: column;
+    text-align: right;
+    justify-content: end;
+    gap:40px;
+}
+.main-header .nav-item{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+
+.main-header .hamburger {
+       display:none;
+       transition: transform 1s;
+}
+
+.hamburger *{
+    font-size:3rem;
+    color:white;
+    text-decoration:none;
+}
+
+.hamburger:hover{
+    transform: rotate(90deg);
+}
+.main-header .nav-item:hover{
+    text-decoration: underline;
+    
+}
+
+@media (max-width:930px){
+    .main-header .main-nav{
+        display:none;
+    }
+   .main-header .hamburger{
+        display:inline-block;
+    }
+};
