@@ -7,3 +7,8 @@
 @import '../components/buttons.css';
 
 @import '../components/footer.css';
+
+.section.partners{
+    text-align:center;
+}
+
