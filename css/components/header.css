@@ -21,8 +21,7 @@
 
 
 .main-header .hamburger {
-       display:none;
-       transition: transform 1s;
+    display:none;
 }
 
 .hamburger *{
@@ -30,13 +29,34 @@
     color:white;
     text-decoration:none;
 }
-
+/* 
 .hamburger:hover{
     transform: rotate(90deg);
-}
+} */
 .main-header .nav-item:hover{
     text-decoration: underline;
     
+}
+.mobile-menu{
+    display:none;
+    position:absolute;
+    top:-300;
+    ri:-130vw;
+    background-color: #fff;
+    width:100%;
+    padding:20px;
+
+}
+.mobile-menu .nav-item{
+    color:black;
+}
+.open .mobile-menu {
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+    align-items: start;
+    top:0;
+    left:0;
 }
 
 @media (max-width:930px){

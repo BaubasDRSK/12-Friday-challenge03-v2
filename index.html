@@ -9,22 +9,29 @@
     <link rel="stylesheet" href="./css/pages/home.css">
 </head>
 <body>
-    <header class="main-header section green-bg">
-        <div class="section-wrapper">
+    <header class="main-header section green-bg">  <!-- Meniu ir logo blokas. Klase spalvai, kad sekanciuose pls butu galima lengvai pakeist splava nekeiciant isidestymo-->  
+        <div class="section-wrapper">  <!-- Wraperis reikalingas, kad visi sekcijose esantys blokai isideliotu lygiai vienodu atstumu nuo krastu ir esant reikaliu butu galima lygiuoti pagal wrpaperio krastus, tokiu budu sekcijai galime suteikti fona per visa ekrana-->
             <img src="./img/home/logo.svg" alt="logo" class="logo">
-            <nav class="main-nav">
+            <nav class="main-nav"> 
                 <a href="./index.html" class="nav-item">Home</a>
                 <a href="#" class="nav-item">Portfolio</a>
                 <a href="./services.html" class="nav-item">Services</a>
                 <a href="#" class="nav-item">Contacts</a>
             </nav>
-            <nav class="hamburger"><a href="#" class="fa fa-bars"></a></nav>
+            <nav class="hamburger" onclick="toggleMobileMenu(this)"><a href="#" class="fa fa-bars"></a>  <!--Hamburger meniu only visible on mobile size screens-->
+                <div class="mobile-menu">
+                <a href="./index.html" class="nav-item">Home</a>
+                <a href="#" class="nav-item">Portfolio</a>
+                <a href="./services.html" class="nav-item">Services</a>
+                <a href="#" class="nav-item">Contacts</a>
+                </div>
+            </nav>
         </div>
     </header>
 
     <section class="hero section green-bg">
         <div class="section-wrapper">
-            <div class="text-wrapper align-left">
+            <div class="text-wrapper align-left">  <!--Tekto elementu grupe, kuria galiem lygiuoti prie section-wrapper krasto-->
                 <h3 class="section-title">Welcome</h3>
                 <h2 class="title">Lorem ipsum dolor sit amet consectetur</h2>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci aspernatur delectus qui optio excepturi nisi explicabo incidunt, porro totam?</p>
@@ -117,4 +124,9 @@
 
 
 </body>
+<script src="./script.js"></script>
 </html>
+
+
+
+
